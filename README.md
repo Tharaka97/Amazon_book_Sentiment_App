@@ -98,9 +98,6 @@ Mixed example:
 The story was interesting but the ending was very disappointing.
 ```
 
-## Important preprocessing requirement
-
-The application intentionally uses the same text-cleaning process and `MAX_LEN = 250` used during model training. The saved `tokenizer.pkl` must also be reused. Training a new tokenizer for the web application would change the word-to-index mapping and produce unreliable predictions.
 
 ## Limitations and ethical considerations
 
