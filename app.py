@@ -8,17 +8,15 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
-# ---------------------------------------------------------
+
 # Configuration
-# ---------------------------------------------------------
+
 MODEL_PATH = "best_cnn_book_model.keras"
 TOKENIZER_PATH = "tokenizer.pkl"
 MAX_LEN = 250
 
-
-# ---------------------------------------------------------
+#----------------------------------------------------------
 # Text preprocessing
-# IMPORTANT: Keep this identical to the cleaning function
 # used when the model was trained.
 # ---------------------------------------------------------
 def clean_text(text):
