@@ -4,19 +4,6 @@
 
 This project implements a Natural Language Processing (NLP) sentiment-analysis system for Amazon book reviews. A Convolutional Neural Network (CNN) classifies a review as either **Positive** or **Negative**.
 
-## Final model results
-
-- Test accuracy: **75.51%**
-- Negative class: precision **0.75**, recall **0.76**, F1-score **0.75**
-- Positive class: precision **0.76**, recall **0.75**, F1-score **0.76**
-- Test set size: **294 reviews**
-
-Confusion matrix results:
-
-| Actual class | Predicted Negative | Predicted Positive |
-|---|---:|---:|
-| Negative | 110 | 35 |
-| Positive | 37 | 112 |
 
 ## Project workflow
 
@@ -33,17 +20,6 @@ Confusion matrix results:
 11. Evaluate the final model on the untouched test set.
 12. Deploy the trained model through a Streamlit web interface.
 
-## Model architecture
-
-The final model uses:
-
-- Embedding layer
-- 1D Convolution (`Conv1D`)
-- Global Max Pooling
-- Dropout
-- Dense layer with L2 regularisation
-- Sigmoid output layer
-
 ## Required files
 
 Place the following files in the repository root:
@@ -56,8 +32,8 @@ amazon-book-sentiment-analyzer/
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
-└── notebooks/
-    └── ISY503_Book_Review_Sentiment_Analysis.ipynb
+└── ISY503_Book_Review_Sentiment_Analysis.ipynb
+    
 ```
 
 `best_cnn_book_model.keras` and `tokenizer.pkl` must be the exact files produced during model training.
@@ -99,18 +75,4 @@ The story was interesting but the ending was very disappointing.
 ```
 
 
-## Limitations and ethical considerations
 
-The model performs binary classification, so it may struggle with mixed sentiment, sarcasm, context-dependent language, spelling variations and reviews that differ substantially from the training data. Dataset labels may also contain subjectivity or errors. Predictions should therefore be treated as model estimates rather than objective judgments.
-
-## Team contribution
-
-Add the team member names, student IDs and contribution information required for the assessment here or in the individual contribution report.
-
-## Dataset
-
-The project uses the Amazon Multi-Domain Sentiment Dataset specified in the ISY503 assessment brief, using the **Books** domain.
-
-## Academic integrity
-
-Clearly identify your team's own code and any external material used. Add citations/references required by your subject's academic-integrity and APA requirements.
